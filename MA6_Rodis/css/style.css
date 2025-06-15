@@ -1,0 +1,52 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title{
+    text-align: center;
+}
+
+.topcontainer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.topdef{
+    margin-right: 50px;
+}
+.arnispic{
+    width: 200px;
+    height: 200px;
+}
+
+.middlecontainer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.trickspic{
+    width: 300px;
+    height: 250px;
+}
+
+.bottomcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-right: 50px;
+}
+
+.lastpic{
+    width: 270px;
+    height: 200px;
+    margin-right: 20px;
+}
+
+.wa{
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
