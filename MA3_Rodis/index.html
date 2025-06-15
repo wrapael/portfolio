@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StreamLocalGems</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+            position: relative;
+        }
+
+        .bg-img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .Title {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 20%;
+            color: #ae957a;
+            text-align: center;
+            padding: 20px;
+            font-family: "Times New Roman", monospace;
+            font-size: 50px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contents {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, auto);
+            gap: 20px;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 40px;
+        }
+
+        .contents img {
+            width: 100%;
+            height: auto;
+            max-width: 400px;
+            max-height: 400px;
+        }
+
+        .video-item {
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-item img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .video-info {
+            padding: 15px;
+            flex: 1;
+        }
+
+        .video-title {
+            font-weight: bold;
+            color: #ae957a;
+            font-size: 25px;
+            margin: 5px 0;
+            font-family: "Times New Roman", serif;
+        }
+
+        .video-desc {
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .video-duration {
+            color: #777;
+            font-size: 15px;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/bg.jpg" alt="Background" class="bg-img" />
+
+    <div class="Title">
+        <strong>MY TOP 10 VIDEO PLAYLIST</strong>
+    </div>
+
+    <div class="contents">
+        <a href="tadhana.html" style="text-decoration: none;">
+            <div class="video-item">
+                <img src="images/tadhana.jpg" alt="tadhana_mv">
+                <div class="video-info">
+                    <div class="video-title">1. Tadhana</div>
+                    <div class="video-desc">Music by Magiliw Street</div>
+                    <div class="video-duration">5:24</div>
+                </div>
+            </div>
+        </a>
+
+        <a href="akasya.html" style="text-decoration: none;">
+            <div class="video-item">
+                <img src="images/akasya.jpg" alt="akasya_mv">
+                <div class="video-info">
+                    <div class="video-title">2. Akasya</div>
+                    <div class="video-desc">Music by Magiliw Street</div>
+                    <div class="video-duration">4:12</div>
+                </div>
+            </div>
+        </a>
+        <a href="buhay.html" style="text-decoration: none;">
+            <div class="video-item">
+                <img src="images/buhay.png" alt="bùhay_mv">
+                <div class="video-info">
+                    <div class="video-title">3. bùhay</div>
+                    <div class="video-desc">Music by Magiliw Street</div>
+                    <div class="video-duration">3:14</div>
+                </div>
+            </div>
+        </a>
+
+        <a href="irog.html" style="text-decoration: none;">
+            <div class="video-item">
+                <img src="images/irog.jpg" alt="irog_mv">
+                <div class="video-info">
+                    <div class="video-title">4. Irog</div>
+                    <div class="video-desc">Music by Magiliw Street</div>
+                    <div class="video-duration">5:00</div>
+                </div>
+            </div>
+        </a>
+        <a href="orasan.html" style="text-decoration: none;">
+            <div class="video-item">
+                <img src="images/orasan.jpg" alt="orasan_mv">
+                <div class="video-info">
+                    <div class="video-title">5. Orasan</div>
+                    <div class="video-desc">Music by Magiliw Street</div>
+                    <div class="video-duration">6:56</div>
+                </div>
+            </div>
+        </a>
+
+        <a href="sayo.html" style="text-decoration: none;">
+            <div class="video-item">
+                <img src="images/sayo.jpg" alt="sa'yo_mv">
+                <div class="video-info">
+                    <div class="video-title">6. Sa'yo</div>
+                    <div class="video-desc">Music by Munimuni</div>
+                    <div class="video-duration">5:54</div>
+                </div>
+            </div>
+        </a>
+        <a href="marilag.html" style="text-decoration: none;">
+            <div class="video-item">
+                <img src="images/marilag.jpg" alt="marilag_mv">
+                <div class="video-info">
+                    <div class="video-title">7. Marilag</div>
+                    <div class="video-desc">Music by Munimuni</div>
+                    <div class="video-duration">4:40</div>
+                </div>
+            </div>
+        </a>
+
+        <a href="bawatpiyesa.html" style="text-decoration: none;">
+            <div class="video-item">
+                <img src="images/bawatpiyesa.jpg" alt="bawat piyesa_mv">
+                <div class="video-info">
+                    <div class="video-title">8. Bawat Piyesa</div>
+                    <div class="video-desc">Music by Munimuni</div>
+                    <div class="video-duration">6:41</div>
+                </div>
+            </div>
+        </a>
+        <a href="sahindipagalala.html" style="text-decoration: none;">
+            <div class="video-item">
+                <img src="images/sahindipagalala.jpg" alt="sa hindi pag-alala_mv">
+                <div class="video-info">
+                    <div class="video-title">9. Sa Hindi Pag-Alala</div>
+                    <div class="video-desc">Music by Munimuni</div>
+                    <div class="video-duration">4:10</div>
+                </div>
+            </div>
+        </a>
+
+        <a href="kalachuchi.html" style="text-decoration: none;">
+            <div class="video-item">
+                <img src="images/kalachuchi.jpg" alt="kalachuchi_mv">
+                <div class="video-info">
+                    <div class="video-title">10. Kalachuchi</div>
+                    <div class="video-desc">Music by Munimuni</div>
+                    <div class="video-duration">7:17</div>
+                </div>
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>

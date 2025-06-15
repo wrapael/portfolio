@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akasya - My Playlist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .bg-img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.2;
+        }
+
+        .video-container {
+            width: 850px;
+            height: 450px;
+            margin: 20px 0 10px;
+            background-color: #000;
+            flex-shrink: 0;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .content-container {
+            width: 800px;
+            height: 300px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow-y: auto;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .video-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #ae957a;
+            margin: 0;
+            font-family: "Times New Roman", serif;
+            font-size: 1.8rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 400px;
+        }
+
+        .return-link {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 8px 15px;
+            background-color: #ae957a;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .return-link:hover {
+            background-color: #8a7560;
+        }
+
+        .description {
+            flex-grow: 1;
+            overflow: hidden;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+            flex-shrink: 0;
+        }
+
+        .stars {
+            color: #f1c40f;
+            font-size: 20px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/bg.jpg" alt="Background" class="bg-img" />
+
+    <div class="video-container">
+        <iframe width=100% height=100% src="https://www.youtube.com/embed/pRGvxMVkSms" title="Magiliw Street - Akasya (Official Lyric Visualizer)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="content-container">
+        <div class="video-header">
+            <h1>Akasya</h1>
+            <a href="index.html" class="return-link">Return to home.</a>
+        </div>
+
+        <div class="description">
+            <p>
+                13 Jun 2023<br><br>
+                Original work of Magiliw Street<br><br>
+                For Bookings & Inquiries:<br>
+                09668974434<br>
+                magiliw.street@gmail.com
+            </p>
+        </div>
+
+        <div class="rating">
+            Rating:
+            <div class="stars">
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+            </div>
+            <span>(5/5)</span>
+        </div>
+    </div>
+</body>
+
+</html>
